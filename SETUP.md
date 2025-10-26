@@ -4,8 +4,7 @@
 - Windows 10/11 hoặc macOS hoặc Linux
 - Python 3.8 hoặc cao hơn
 - Kết nối Internet
-- Telegram Bot API Key (đã có: `7827052914:AAECexwtFx8yM6xZZZr8BZWtkqVOTiy-bZ8`)
-
+- Telegram Bot API Key
 ## Cài đặt nhanh (3 bước)
 
 ### Bước 1: Mở Terminal/CMD
@@ -170,5 +169,3 @@ Bot của bạn đã sẵn sàng sử dụng!
 - Khám phá các tính năng!
 
 ---
-
-Made with ❤️ for learning programming
