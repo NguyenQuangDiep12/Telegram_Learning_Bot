@@ -46,7 +46,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ❓ Trả lời câu hỏi với AI thông minh
 📊 Kiểm tra kiến thức với quiz tương tác
 
-👉 Chọn một tùy chọn bên dưới để bắt đầu!
+💡 *Bạn có thể:*
+• Dùng các nút menu bên dưới
+• Hoặc gõ câu hỏi tự do bất kỳ lúc nào!
+
+Ví dụ: "Giải thích async/await trong JavaScript"
 
 🤖 /help - Xem hướng dẫn chi tiết
 """
@@ -161,10 +165,12 @@ async def handle_menu_selection(update: Update, context: ContextTypes.DEFAULT_TY
     elif text == '❓ Hỏi AI':
         await update.message.reply_text(
             "❓ Đặt câu hỏi của bạn (tiếng Việt hoặc tiếng Anh):\n\n"
+            "💡 Bạn có thể hỏi bất kỳ lúc nào bằng cách gõ câu hỏi trực tiếp!\n\n"
             "Ví dụ:\n"
             "• 'Giải thích async/await trong JavaScript'\n"
             "• 'What is React hooks?'\n"
-            "• 'Làm thế nào để tối ưu query LINQ?'"
+            "• 'Làm thế nào để tối ưu query LINQ?'\n\n"
+            "🤖 Gõ câu hỏi của bạn ngay bây giờ..."
         )
         context.user_data['awaiting_ai_question'] = True
     
@@ -245,10 +251,10 @@ async def handle_menu_selection(update: Update, context: ContextTypes.DEFAULT_TY
     elif text.startswith('Quiz'):
         await handle_quiz(update, context, text)
     
-    # Xử lý câu hỏi AI
+    # Xử lý câu hỏi AI (nếu có flag, nhưng giờ không cần nữa vì tự động xử lý)
     elif context.user_data.get('awaiting_ai_question'):
         await handle_ai_question(update, context)
-        context.user_data['awaiting_ai_question'] = False
+        # Giữ flag để user có thể hỏi tiếp (không clear)
     
     # Xử lý yêu cầu LeetCode hoặc bài tập
     elif context.user_data.get('awaiting_practice'):
@@ -297,10 +303,9 @@ async def handle_menu_selection(update: Update, context: ContextTypes.DEFAULT_TY
         )
     
     else:
-        await update.message.reply_text(
-            "🤔 Tôi không hiểu. Hãy sử dụng menu hoặc /help để xem hướng dẫn.",
-            reply_markup=get_main_menu()
-        )
+        # Nếu không match với menu nào, coi như câu hỏi tự do từ user
+        # Tự động xử lý bằng AI handler
+        await handle_ai_question(update, context)
 
 
 async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE):

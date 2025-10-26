@@ -1,0 +1,101 @@
+🤖 CÁCH SỬ DỤNG BOT - ĐƠN GIẢN
+==================================
+
+Sau khi deploy xong, bạn có thể sử dụng bot theo 2 cách:
+
+CÁCH 1: DÙNG MENU (BẰNG CÁC NÚT)
+---------------------------------
+👤 Bạn: /start
+Bot: [Hiển thị 6 nút menu]
+
+👤 Bạn: [Nhấn một nút]
+Bot: [Thực hiện chức năng tương ứng]
+
+Ví dụ:
+• Nhấn "📚 Học Lý Thuyết" → Chọn C#, JS, TS, React
+• Nhấn "💻 Thực Hành" → Chọn bài tập LeetCode
+• Nhấn "📊 Quiz" → Kiểm tra kiến thức
+
+
+CÁCH 2: HỎI TỰ DO (KHÔNG CẦN NÚT) ⭐ MỚI!
+------------------------------------------
+Bạn có thể đặt câu hỏi bất kỳ lúc nào bằng cách gõ trực tiếp!
+
+Ví dụ 1:
+👤 Bạn: "Giải thích async/await trong JavaScript"
+Bot: [Trả lời chi tiết về async/await]
+
+Ví dụ 2:
+👤 Bạn: "What is React hooks?"
+Bot: [Giải thích về React hooks]
+
+Ví dụ 3:
+👤 Bạn: "Làm thế nào để tối ưu LINQ query?"
+Bot: [Hướng dẫn tối ưu LINQ]
+
+Ví dụ 4:
+👤 Bạn: "Sự khác biệt giữa var, let, const"
+Bot: [Giải thích scope, hoisting, TDZ]
+
+
+CÁC LOẠI CÂU HỎI BẠN CÓ THỂ HỎI:
+--------------------------------
+✅ Syntax và cú pháp
+✅ Concepts và khái niệm
+✅ Best practices
+✅ So sánh giữa các công nghệ
+✅ Debugging và troubleshooting
+✅ Performance optimization
+✅ Design patterns
+✅ Và bất kỳ câu hỏi nào về lập trình!
+
+
+VÍ DỤ SỬ DỤNG THỰC TẾ:
+----------------------
+👤 User: /start
+Bot: [Menu chính]
+
+👤 User: "Tôi muốn học C# basic"
+Bot: [Trả lời về C# basics]
+
+👤 User: "Thế còn JavaScript thì sao?"
+Bot: [Trả lời về JavaScript]
+
+👤 User: [Nhấn "📚 Học Lý Thuyết" → "C# & .NET"]
+Bot: [Nội dung chi tiết về C# & .NET]
+
+👤 User: "Có bài tập nào về array không?"
+Bot: [Gửi bài tập LeetCode về arrays]
+
+👤 User: [Nhấn "📊 Kiểm Tra Kiến Thức" → "Quiz C#"]
+Bot: [Câu hỏi quiz]
+
+
+TIPS:
+-----
+1. Hỏi tự do, đừng sợ! Bot sẽ tự động xử lý
+2. Kết hợp cả menu và câu hỏi tự do
+3. Bot hỗ trợ cả tiếng Việt và tiếng Anh
+4. Có thể hỏi nhiều câu liên tiếp
+
+
+CÁC LỆNH:
+---------
+/start - Bắt đầu lại
+/help  - Xem hướng dẫn
+/topics - Xem các chủ đề
+
+
+🎉 BẮT ĐẦU NGAY!
+================
+1. Mở Telegram
+2. Tìm bot của bạn
+3. Gửi: /start
+4. Hỏi bất cứ gì bạn muốn!
+
+Ví dụ: "Giải thích closure trong JavaScript"
+
+หรือ
+
+Dùng menu để khám phá các tính năng!
+
