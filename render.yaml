@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: telegram-learning-bot
+    runtime: python
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: API_KEY
+        value: 7827052914:AAECexwtFx8yM6xZZZr8BZWtkqVOTiy-bZ8
+
